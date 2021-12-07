@@ -31,10 +31,10 @@ content:
     tag:  Mental health stigma 
 
   - name: Disability Awareness 
-    tag:  Disability Awareness 
+    tag:  '*'
 
   - name: Dopamine Functioning 
-    tag: Demo
+    tag: '*'
 
 design:
   # Choose how many columns the section has. Valid values: '1' or '2'.
