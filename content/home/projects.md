@@ -28,11 +28,9 @@ content:
   - name: All
     tag: '*'
   - name: Mental health stigma 
-    tag:  *'
-
+    tag:  '*'
   - name: Disability Awareness 
     tag:  '*'
-
   - name: Dopamine Functioning 
     tag: '*'
 
