@@ -23,5 +23,5 @@ main:
 # # Link to a PDF of your resume/CV from the menu.
 # # To enable, copy your resume/CVto `static/uploads/resume.pdf` and uncomment the lines below.
 name: "CV"
-url: {{% staticref "uploads/resume.pdf" %}}Download my CV{{% /staticref %}}
+url:  "uploads/resume.pdf"
 weight: 70
