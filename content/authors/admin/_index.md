@@ -72,4 +72,4 @@ highlight_name: true
 Laiba Rizwan is a Master's student in the Neuroscience program at Western University. Her research interests lie at the intersection of executive functioning, cognitive neuroscience, and clinical neuropsychology. As part of her master’s thesis, she is looking at the impact of early life adversity on the development and functioning of dopaminergic pathways in children using the neuromelanin-sensitive MRI (NM-MRI) technique. NM-MRI is a non-invasive technology that capitalizes on the paramagnetic properties of neuromelanin, a by-product of dopamine metabolism to provide a reliable and sensitive measure of the integrity and functioning of dopamine neurons.
 As an undergraduate student, she has spent her time conducting research to understand stigma towards individuals with Schizophrenia and investigating the role of educational games in reducing discrimnation. 
 
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
+{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
