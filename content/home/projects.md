@@ -27,9 +27,13 @@ content:
   filter_button:
   - name: All
     tag: '*'
-  - name: Deep Learning
-    tag: Deep Learning
-  - name: Other
+  - name: Mental health stigma 
+    tag:  Mental health stigma 
+
+  - name: Disability Awareness 
+    tag:  Disability Awareness 
+
+  - name: Dopamine Functioning 
     tag: Demo
 
 design:

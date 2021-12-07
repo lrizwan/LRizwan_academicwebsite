@@ -1,0 +1,11 @@
+# Font style metadata
+name = "my_font"
+
+# Optional Google font URL
+google_fonts = "family=Great+Vibes:wght@700&family=Cinzel&family=Amiri&family=Libre+Baskerville:wght@400;700"
+
+# Font families
+heading_font = "Great_Vibes"
+body_font = "Amiri"
+nav_font = "Libre_Baskerville"
+mono_font = "Amiri"
