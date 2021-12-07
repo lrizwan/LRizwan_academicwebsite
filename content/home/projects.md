@@ -28,7 +28,7 @@ content:
   - name: All
     tag: '*'
   - name: Mental health stigma 
-    tag:  Mental health stigma 
+    tag:  *'
 
   - name: Disability Awareness 
     tag:  '*'

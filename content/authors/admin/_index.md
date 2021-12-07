@@ -14,7 +14,7 @@ organizations:
   url: https://www.uwo.ca
 
 # Short bio (displayed in user profile at end of posts)
-bio: Laiba Rizwan is a MSc student in neurosceince at Western University. 
+bio: Laiba Rizwan is a MSc student in neuroscience at Western University. 
 
 # Interests to show in About widget
 interests:
