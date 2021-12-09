@@ -174,35 +174,40 @@ pre code {
 <p>As a neuroscience grad student with a background in psychology, I wasn’t permitted to take the somewhat coveted neuroanatomy course that the neuroscience department offered at my undergraduate institution. This course was all the hype! Dissecting sheep brains, carefully studying brain structures with the help of atlases and coming out smelling like formaldehyde (too far?). Point is, I felt clearly disadvantaged given that I am aware of the functioning of structures such as the percuneus, inferior frontal gyrus and fornix but can’t visualize them.</p>
 <p>While there are some great software available online, access is limited by one simple problem…. MONEY!!! Just when I was about to buy an atlas, I came across this incredibly cool feature in r that lets you visualize the brain in a 2D <strong>and</strong> a 3D fashion.</p>
 <p>The r package that let’s you do a 2D analysis is called ggseg. From an input standpoint, it is like the ggplot package but uses inbuilt atlases to display the brain from various vantage points.</p>
-<div id="stacked-image" class="section level4">
-<h4>Stacked Image</h4>
+<div id="stacked-image" class="section level3">
+<h3>Stacked Image</h3>
 <p>This is just a simple (boring) stacked image</p>
 <p><strong>ggseg(atlas=“dk”,position = “stacked”) +</strong> <strong>theme_classic() +</strong></p>
-<p><code>static/uploads/all.png</code></p>
+<p><code>exampleSite/resources/_gen/images/post/getting-started/stacked.png</code></p>
 </div>
 <div id="a-medial-view-with-the-aseg-atlas" class="section level3">
 <h3>A Medial view with the aseg atlas</h3>
 <p><strong><em>ggseg(atlas=“aseg”,position = “stacked”) + theme_classic() +</em></strong></p>
 <p><strong><em>labs(title = “aseg_atlas”,</em></strong> <strong><em>subtitle = “classic theme”)</em></strong></p>
-<p><code>static/uploads/medial.png</code></p>
+<p><code>medial.png</code></p>
 </div>
 <div id="region-fill" class="section level3">
 <h3>Region Fill</h3>
 <p>You can also add legends and fill areas on the plot according to brain regions</p>
-<p>ggseg(mapping=aes(file=region),colour=“white”)+ <strong><em>scale_fill_brain(“aseg”)+</em></strong> <strong><em>theme(legend.justification = c(1,0),legend.position = “right”,</em></strong> <strong><em>legend.text = element_text(size=6))+</em></strong></p>
+<p>ggseg(mapping=aes(file=region),colour=“white”)+ <strong><em>scale_fill_brain(“aseg”)+</em></strong></p>
+<p><strong><em>theme(legend.justification = c(1,0),legend.position = “right”,</em></strong></p>
+<p><strong><em>legend.text = element_text(size=6))+</em></strong></p>
 <p><strong><em>guides(fill=guide_legend(ncols=3))</em></strong></p>
-<pre><code>`static/uploads/white.png`</code></pre>
+<pre><code>`white.png`</code></pre>
 </div>
 <div id="d-subcortical-structures" class="section level3">
 <h3>2D subcortical Structures</h3>
-<pre><code>`static/uploads/subcortical.png`</code></pre>
+<pre><code>`subcortical.png`</code></pre>
 <p><strong><em>Now for the coolest one</em></strong></p>
 <p>The 3D atlas…</p>
 <p>In addition to the arguments taken by a 2D atlas, this takes the arguments of opacity and color for the background</p>
 <p>The functionality is especially great for visualizing the sub cortical structures that are buried deep under the cortex. What’s more? it also labels them..</p>
-<pre><code>`static/uploads/rename.png`</code></pre>
-<p><strong>ggseg (atlas = “aseg”,</strong> <strong>mapping = aes(fill = region)) +</strong> <strong><em>theme(legend.justification = c(1, 0), legend.position = “bottom” , legend.text = element_text(size = 5)) +</em></strong> guides(fill = guide_legend(ncol = 3))***</p>
-<p><code>static/uploads/glass.png</code></p>
+<pre><code>`rename.png`</code></pre>
+<p><strong>ggseg (atlas = “aseg”,</strong></p>
+<p><strong>mapping = aes(fill = region)) +</strong></p>
+<p><strong><em>theme(legend.justification = c(1, 0), legend.position = “bottom” , legend.text = element_text(size = 5)) +</em></strong></p>
+<p><strong><em>guides(fill = guide_legend(ncol = 3))</em></strong></p>
+<p><code>glass.png</code></p>
 <p><em>Suffice to say that I won’t be needing an atlas anymore… :)</em></p>
 </div>
 </div>

@@ -22,7 +22,7 @@ This is just a simple (boring) stacked image
   
   
   
-  `all.png`
+  `exampleSite/resources/_gen/images/post/getting-started/stacked.png`
   
 
 ### A Medial view with the aseg atlas 
