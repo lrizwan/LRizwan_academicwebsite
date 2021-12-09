@@ -64,7 +64,7 @@ This is what the file looks like our data contains 480 columns 360 rows and 52 s
 ![screen reader text](all.png "caption")
 
 
-As you can see that the slices are barely discernable owing to their large number. 
+As you can see that the slices are barely discernible owing to their large number. 
 
 
 
