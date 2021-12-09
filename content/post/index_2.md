@@ -1,5 +1,5 @@
 ---
-title: gg_seg
+title: Plotting Tool for Brain Atlases:gg_seg
 cms_exclude: true
 
 # View.

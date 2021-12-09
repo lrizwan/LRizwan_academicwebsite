@@ -1,5 +1,5 @@
 ---
-title: Magnetic Resonance image Pre-processing. 
+title: Pre-processing of MR images . 
 cms_exclude: true
 
 # View.
