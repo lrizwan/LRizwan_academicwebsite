@@ -1,11 +1,18 @@
 ---
 title: gg_seg
+cms_exclude: true
 
-# **gg_seg**
+# View.
+#   1 = List
+#   2 = Compact
+#   3 = Card
+view: 2
 
-
-
-
+# Optional header image (relative to `static/media/` folder).
+header:
+  caption: ""
+  image: ""
+---
 
   As a neuroscience grad student with a background in psychology, I wasn't permitted to take the somewhat coveted neuroanatomy course that the neuroscience department offered at my undergraduate institution. This course was all the hype! Dissecting sheep brains, carefully studying brain structures with the help of atlases and coming out smelling like formaldehyde (too far?). Point is, I felt clearly disadvantaged given that I am aware of the functioning of structures such as the percuneus, inferior frontal gyrus and fornix but can't visualize them. 
   
