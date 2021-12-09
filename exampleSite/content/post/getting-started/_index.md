@@ -22,7 +22,7 @@ This is just a simple (boring) stacked image
   
   
   
-  `all.png`
+  `static/uploads/all.png`
   
 
 ### A Medial view with the aseg atlas 
@@ -34,7 +34,7 @@ This is just a simple (boring) stacked image
 ***labs(title = "aseg_atlas",***
 ***subtitle = "classic theme")***
 
-  `medial.png`
+  `static/uploads/medial.png`
 
 
 
@@ -51,12 +51,12 @@ ggseg(mapping=aes(file=region),colour="white")+
         
   ***guides(fill=guide_legend(ncols=3))***
   
-    `white.png`
+    `static/uploads/white.png`
     
 ### 2D subcortical Structures 
 
 
-    `subcortical.png`
+    `static/uploads/subcortical.png`
   
   
  ***Now for the coolest one***
@@ -70,7 +70,7 @@ The functionality is especially great for visualizing the sub cortical structure
 
    
    
-    `rename.png`
+    `static/uploads/rename.png`
     
     
     
@@ -83,7 +83,7 @@ The functionality is especially great for visualizing the sub cortical structure
   
   ***guides(fill = guide_legend(ncol = 3))***
   
-`glass.png`
+`static/uploads/glass.png`
   
 _Suffice to say that I won't be needing an atlas anymore... :)_ 
                                  
