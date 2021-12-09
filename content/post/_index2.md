@@ -61,8 +61,7 @@ This is what the file looks like
 **image(mri_image)***
 
 
-
-{{< figure src="original.png" caption="A caption" numbered="true" >}}
+{{< figure src="all.png" caption="A caption" numbered="true" >}}
 
 
 As you can see that the slices are barely discernable owing to their large number. 
