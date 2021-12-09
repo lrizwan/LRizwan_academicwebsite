@@ -1,0 +1,50 @@
+---
+title: "MR_data_preprocessing"
+author: "Laiba Rizwan"
+date: "08/12/2021"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r MR image processing}
+
+#install.packages("oro.nifti")
+library(oro.nifti)
+mri_image <- readNIfTI("NM_GRE_C43_CombEcho_s004.nii", reorient=FALSE)
+
+nrows <- dim(mri_image)[1]
+ncols <- dim(mri_image)[2]
+nslices <- dim(mri_image)[3]
+
+
+image(mri_image, z=45,plot.type="single") 
+
+
+```
+
+```{r fsl}
+##install.packages("fslr")
+library(fslr)
+##bias extraction 
+biascorrection <- fsl_biascorrect(mri_image,retimg = TRUE)
+image(biascorrection, z=45,plot.type="single") 
+##brain extraction
+bet <- fslbet(infile=biascorrection,retimg = TRUE)
+image(bet)
+FSLDIR='/usr/local/fsl'
+library(neurobase)
+### brain segmentation
+extract <- fast(bet)
+library(scales)
+
+ortho2(bet,extract==2,col.y=alpha("red",0.5),text="Grey Matter")
+ortho2(bet,extract==3,col.y=alpha("white",0.5),text="White Matter")
+ortho2(bet,extract==1,col.y=alpha("blue",0.5),text="Cerebrospinal Fluid")
+
+
+```
