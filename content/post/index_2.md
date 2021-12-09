@@ -14,13 +14,22 @@ header:
   image: ""
 ---
 
-  As a neuroscience grad student with a background in psychology, I wasn't permitted to take the somewhat coveted neuroanatomy course that the neuroscience department offered at my undergraduate institution. This course was all the hype! Dissecting sheep brains, carefully studying brain structures with the help of atlases and coming out smelling like formaldehyde (too far?). Point is, I felt clearly disadvantaged given that I am aware of the functioning of structures such as the percuneus, inferior frontal gyrus and fornix but can't visualize them. 
+ As a psychology undergrad, I wasn't permitted to take the somewhat coveted neuroanatomy course that the neuroscience department offered at my undergraduate institution. This course was all the hype! Dissecting sheep brains, carefully studying brain structures with the help of atlases and coming out smelling like formaldehyde (too far?). During classes in cognitive neuroscience, I began to notice that those with courses such as neurophysiology  and neuroanatomy were better equipped to understand and appreciate the localization of function.
+ 
+ I felt clearly disadvantaged. Although,  I am aware of the functioning of structures such as the percuneus, inferior frontal gyrus, and fornix, my ability to form connections and appreciate the structural and functional connectivity between various neuro-anatomical structures was lacking due to a lack of such fundamental knowledge.
   
   
-  While there are some great software available online, access is limited by one simple problem.... MONEY!!!
-Just when I was about to buy an atlas, I came across this incredibly cool feature in r that lets you visualize the brain in a 2D **and** a 3D fashion. 
+ While there are some great software available online, access for me was limited by one simple problem.... MONEY!!! 
+  
+Alternative: Purchase a physical copy of an atlas and keep referring to it when in doubt.
 
-  The r package that let's you do a 2D analysis is called ggseg. From an input standpoint, it is like the ggplot package but uses inbuilt atlases to display the brain from various vantage points. 
+Just when I was about to buy an atlas, I came across this incredibly cool feature in r that lets you visualize the brain in 2D **and** 3D. It's pretty neat actually! 
+
+  The r package that let's you do a 2D analysis is called ggseg. ggseg relies on ggplot2. Infact, using _geom brain_ in ggplot also provides some basic neuroanatomical plots. But _ggseg_ and _ggsegExtras_ make visualization significantly more interactive and detailed.
+  
+  From an input standpoint, ggseg uses it's in-built atlases to display the brain from various vantage points. 
+  
+  Well, they say a picture is worth a thousand words so let's take a look
 
 ### Stacked Image
 This is just a simple stacked image. 
@@ -67,7 +76,7 @@ This is just a simple stacked image.
 
 
 
-As you might ahve noticed, the image lacks detail and gives a gross anatomy of the human brain.
+As you might have noticed, the image lacks detail and gives a gross anatomy of the human brain.
 
 
 
@@ -85,17 +94,11 @@ As you might ahve noticed, the image lacks detail and gives a gross anatomy of t
 ### A Medial view with the aseg atlas 
 
 
-
-
-
-
-
-
+Looking at the structures toward the midline of the brain 
 
 
 
 ***ggseg(atlas="aseg",position = "stacked") + theme_classic() +***
-
 
 ***labs(title = "aseg_atlas",***
 ***subtitle = "classic theme")***
@@ -123,6 +126,11 @@ As you might ahve noticed, the image lacks detail and gives a gross anatomy of t
 
 
 
+
+
+
+
+Additionally, individual hemispheres can also be viewed from various ortientations e.g., lateral, inferior, superior. 
 
 
 
@@ -179,10 +187,10 @@ You can also add legends and fill areas on the plot according to brain regions.
 
 
 
-Sub-cortical structures, e.g., basal ganglia, substantia nigra are embedded deep into the brain and can typically be seen after slicing the brain into two halves. 
+Sub-cortical structures, e.g., basal ganglia, substantia nigra are embedded deep into the brain and can typically be seen after slicing the brain into two halves. This is where having had the experience of actually holding a brain in your hand really helps solidify information. Plus, these structures are relatively smaller than the cerebral cortices. 
 
 
-Here, the brain is dissected into coronal sections (anterior and posterior halves) and subcortical structures are labelled. 
+Here, the brain is dissected into coronal sections (anterior and posterior halves) and sub-cortical structures are labelled. 
 
 
 
