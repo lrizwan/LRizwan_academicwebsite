@@ -55,13 +55,13 @@ Next I wanna get a sense of what the file contains,
 It looks like our data contains  rows, columns and slices
 
 
-This is what the file looks like 
+This is what the file looks like our data contains 480 columns 360 rows and 52 slices 
 
 
 **image(mri_image)***
 
 
-{{< figure src="all.png" caption="A caption" numbered="true" >}}
+![screen reader text](all.png "caption")
 
 
 As you can see that the slices are barely discernable owing to their large number. 
@@ -76,12 +76,7 @@ Let's see if we could zoom into a single slice, say slice 45
 
 
 
-
-`static/uploads/original.png`
-
-
-
-
+![screen reader text](original.png "caption")
 
 
 
@@ -105,18 +100,12 @@ Here is what the bias corrected image looks like for slice 45.
 
 
 
-
-
-
-
-`static/uploads/bias.png`
-
-
-
-
-
-
 **image(biascorrection, z=45,plot.type="single")**
+
+
+![screen reader text](bias.png "caption")
+
+
 
 
 Not much different, eh? Well, not when you eyeball it. in reality, if we were to look at the difference between the two images, you will notice that  bias field correction is pivotal for getting the intensities of the images within a slice on a comparable scale. Which,as you will see in the next section, influences subsequent, more advanced analyses. 
@@ -156,7 +145,8 @@ We're going to use the ortho2 function, and we'll overlay the segmentation of th
 
 
 
-`static/uploads/csf.png`
+
+![screen reader text](csf.png "caption")
 
 
 
@@ -167,8 +157,7 @@ And we'll do the same for grey matter(red) and white matter(white).
 
 
 
-`static/uploads/gm.png`
-
+![screen reader text](gm.png "caption")
 
 
 **ortho2(bet,extract==3,col.y=alpha("white",0.5),text="White Matter")**
@@ -177,7 +166,7 @@ And we'll do the same for grey matter(red) and white matter(white).
 
 
 
-`static/uploads/wm.png`
+![screen reader text](wm.png "caption")
 
 
 
